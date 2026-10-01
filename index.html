@@ -1,0 +1,290 @@
+<!doctype html><html lang="sk"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Happy Hair Salon SK · kaderníctvo pre kučeravé vlasy v Rožňave — neoficiálny návrh</title>
+<meta name="description" content="Neoficiálny návrh homepage pre Happy Hair Salon SK v Rožňave — kučeravé vlasy, ozdravenie vlasov a trichologické poradenstvo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sniglet&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cork:#c49b6b;--cork-d:#a97f52;--frame:#0e2b20;--frame-2:#16392b;
+  --note:#f8e27c;--note-edge:#ecd164;--paper:#fffdf7;
+  --ink:#1f2a22;--ink-2:#4a5249;--line:rgba(31,42,34,.16);
+  --gold:#c9a54e;--copper:#b4472a;
+  --hand:"Sniglet",ui-rounded,system-ui,sans-serif;--sans:"Public Sans",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font:400 17px/1.6 var(--sans);color:var(--ink);background-color:var(--cork);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='c'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' seed='4'/%3E%3CfeColorMatrix values='0 0 0 0 .32 0 0 0 0 .2 0 0 0 0 .08 0 0 0 1.6 -.62'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23c)'/%3E%3C/svg%3E");
+  padding-bottom:calc(76px + env(safe-area-inset-bottom));overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--frame);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(16px,4vw,40px)}
+.num{font-variant-numeric:tabular-nums}
+.tag{font:700 12px/1.3 var(--sans);letter-spacing:.16em;text-transform:uppercase}
+
+.notice{background:var(--frame);color:#f3efe2;font-size:13.5px;line-height:1.45;text-align:center;padding:9px 16px;border-bottom:1px solid rgba(255,255,255,.12)}
+
+/* rám nástenky */
+header{background:var(--frame);color:#f3efe2;border-bottom:10px solid var(--frame-2);box-shadow:0 6px 14px -6px rgba(0,0,0,.45)}
+.bar{display:flex;align-items:center;gap:24px;min-height:78px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:52px;height:52px;border-radius:50%;box-shadow:0 0 0 1px rgba(201,165,78,.5)}
+.brand span{font:400 23px/1 var(--hand)}
+nav{display:flex;gap:24px;margin-left:auto}
+nav a,.tel{text-decoration:none;font-size:15px;padding:12px 0;background:linear-gradient(var(--gold),var(--gold)) 0 100%/0 1px no-repeat;transition:background-size .2s}
+nav a:hover,.tel:hover{background-size:100% 1px}
+.tel{font-weight:600;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;border-radius:999px;text-decoration:none;font:600 15px/1 var(--sans);white-space:nowrap;transition:transform .2s}
+.btn-gold{background:var(--gold);color:var(--frame)}
+.btn-green{background:var(--frame);color:#f8f3e3}
+.btn-line{border:2px solid var(--frame);color:var(--frame)}
+.btn:hover{transform:translateY(-1px)}
+
+/* prvky nástenky */
+.pin{position:relative}
+.pin::before{content:"";position:absolute;top:-9px;left:50%;width:22px;height:22px;margin-left:-11px;border-radius:50%;z-index:2;
+  background:radial-gradient(circle at 35% 30%,#3f7a5d 0 18%,#1d4d38 45%,#0b2419 100%);box-shadow:2px 4px 5px rgba(0,0,0,.35)}
+.pin.gold::before{background:radial-gradient(circle at 35% 30%,#f5dd97 0 18%,#c9a54e 48%,#7d6024 100%)}
+.note{background:linear-gradient(180deg,var(--note) 0%,var(--note) 88%,var(--note-edge) 100%);padding:34px 30px 30px;box-shadow:0 1px 1px rgba(0,0,0,.12),6px 14px 22px -10px rgba(40,20,0,.45)}
+.print{background:var(--paper);padding:10px 10px 0;box-shadow:0 1px 2px rgba(0,0,0,.18),8px 16px 24px -12px rgba(40,20,0,.55)}
+.print figcaption{font:400 17px/1 var(--hand);color:var(--ink-2);display:flex;justify-content:space-between;padding:12px 6px 14px}
+.print img{transition:transform .5s ease}
+.print .crop{overflow:hidden}
+.print:hover img{transform:scale(1.045)}
+.r1{transform:rotate(-1.6deg)}.r2{transform:rotate(1.3deg)}.r3{transform:rotate(-.7deg)}.r4{transform:rotate(2deg)}
+
+/* hero */
+.hero{padding:clamp(44px,6vw,76px) 0 clamp(56px,7vw,90px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:clamp(30px,5vw,64px);align-items:start}
+.hero .print{max-width:560px}
+.stack{display:grid;gap:34px;padding-top:12px}
+h1{font:400 clamp(44px,5.6vw,72px)/.98 var(--hand);color:var(--frame);margin:10px 0 18px}
+.intro{font-size:19px;line-height:1.5;margin-bottom:24px}
+.intro q{quotes:"„" "“"}
+.src{display:block;font-size:13px;color:var(--ink-2);margin-top:6px}
+.ctas{display:flex;flex-wrap:wrap;gap:10px}
+.mini{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.mini .note{padding:28px 20px 20px}
+.mini b{display:block;font:400 34px/1 var(--hand);color:var(--frame);margin-bottom:6px}
+.mini span{font-size:14px;line-height:1.4;display:block}
+
+/* služby — zelená plsť, kontrastný blok */
+.felt{background:var(--frame);color:#f3efe2;padding:clamp(52px,7vw,92px) 0;border-top:10px solid var(--frame-2);border-bottom:10px solid var(--frame-2);
+  background-image:radial-gradient(rgba(255,255,255,.035) 1px,transparent 1.2px);background-size:7px 7px}
+.felt-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:46px}
+.felt h2{font:400 clamp(36px,4.4vw,56px)/1 var(--hand);color:#fbf6e4}
+.felt .tag{color:var(--gold)}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(22px,3vw,40px);list-style:none}
+.svc .note{color:var(--ink);min-height:230px}
+.svc h3{font:400 28px/1.1 var(--hand);color:var(--frame);margin-bottom:12px}
+.svc p{font-size:16px;line-height:1.55}
+.felt .foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-top:44px;align-items:center}
+.felt .foot p{font-size:15px;color:rgba(243,239,226,.82);max-width:40em}
+.felt .foot .motto{font:400 clamp(22px,2.4vw,28px)/1.25 var(--hand);color:var(--note)}
+
+/* premeny */
+.wall{padding:clamp(56px,8vw,100px) 0}
+.sec-h{display:flex;align-items:end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:46px}
+.sec-h h2{font:400 clamp(36px,4.4vw,56px)/1 var(--hand);color:var(--frame)}
+.sec-h .note{max-width:470px;padding:26px 24px 20px;font-size:16px;line-height:1.5}
+.sec-h .note q{quotes:"„" "“"}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(26px,3.4vw,44px) clamp(18px,2.6vw,34px);align-items:start}
+.g1{grid-column:span 4}.g2{grid-column:span 4;margin-top:40px}.g3{grid-column:span 4}
+.g4{grid-column:2/span 3}.g5{grid-column:span 3;margin-top:28px}.g6{grid-column:span 4;margin-top:6px}
+.g4 .print,.g5 .print{max-width:315px}
+.g6 .print{max-width:370px}
+
+/* ocenenia */
+.awards{padding:0 0 clamp(56px,8vw,100px)}
+.ribbons{display:grid;grid-template-columns:repeat(4,1fr) 1.3fr;gap:clamp(16px,2.4vw,28px);align-items:start}
+.ribbon{background:var(--paper);padding:28px 18px 18px;text-align:center;box-shadow:0 1px 2px rgba(0,0,0,.15),6px 12px 20px -10px rgba(40,20,0,.45)}
+.medal{width:64px;height:64px;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;font:400 20px/1 var(--hand);color:var(--ink)}
+.bz{background:radial-gradient(circle at 35% 30%,#f0c79d,#b07644 60%,#7c4c26)}
+.ag{background:radial-gradient(circle at 35% 30%,#ffffff,#c4c7c6 55%,#878c8b)}
+.au{background:radial-gradient(circle at 35% 30%,#fbe7a8,#d2ad53 55%,#8f6c25)}
+.ribbon b{display:block;font:400 26px/1 var(--hand);color:var(--frame)}
+.ribbon span{font-size:14px;color:var(--ink-2)}
+.score{padding:30px 24px 22px}
+.score b{font:400 44px/1 var(--hand);color:var(--frame);display:block}
+.score p{font-size:15px;line-height:1.5;margin-top:8px}
+.score small{display:block;font-size:13px;color:var(--ink-2);margin-top:10px}
+
+/* kontakt — kartička */
+.contact{padding:0 0 clamp(64px,8vw,110px)}
+.card{background:var(--paper);max-width:900px;margin:0 auto;padding:clamp(34px,5vw,56px) clamp(22px,5vw,60px) clamp(28px,4vw,44px);
+  background-image:linear-gradient(transparent 0 calc(100% - 1px),rgba(70,120,170,.18) calc(100% - 1px));background-size:100% 34px;background-position:0 86px;
+  box-shadow:0 1px 2px rgba(0,0,0,.15),10px 18px 30px -14px rgba(40,20,0,.5);border-top:4px solid var(--copper)}
+.card h2{font:400 clamp(34px,4vw,48px)/1 var(--hand);color:var(--frame);margin-bottom:28px}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:28px 48px}
+.cgrid .tag{color:var(--copper);display:block;margin-bottom:6px}
+.cgrid p{font-size:17px;line-height:1.55}
+.cgrid .big{font:400 26px/1.2 var(--hand);color:var(--frame)}
+.cgrid small{display:block;font-size:14px;color:var(--ink-2);line-height:1.5;margin-top:4px}
+.cgrid a{text-decoration:none;background:linear-gradient(var(--copper),var(--copper)) 0 100%/0 1px no-repeat;transition:background-size .2s}
+.cgrid a:hover{background-size:100% 1px}
+.card .ctas{margin-top:30px}
+
+footer{background:var(--frame);color:rgba(243,239,226,.85);font-size:14px;padding:26px 0;border-top:10px solid var(--frame-2)}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:none;grid-template-columns:1.3fr 1fr;gap:8px;
+  padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(14,43,32,.97)}
+.mbar .btn{min-height:50px}
+.mbar .btn-line{border-color:rgba(243,239,226,.5);color:#f3efe2}
+
+@media (max-width:980px){
+  nav{display:none}
+  .hero .wrap{grid-template-columns:1fr}
+  .hero .print{margin:0 auto}
+  .svc{grid-template-columns:1fr}
+  .svc .note{min-height:0}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .g1,.g2,.g3,.g4,.g5,.g6{grid-column:auto;margin-top:0}
+  .ribbons{grid-template-columns:repeat(4,1fr)}
+  .score{grid-column:1/-1}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .bar{min-height:66px}
+  .bar .tel,.bar .btn{display:none}
+  .brand span{font-size:21px}
+  .note{padding:30px 22px 24px}
+  .mini{grid-template-columns:1fr 1fr;gap:16px}
+  .mini b{font-size:24px}
+  .grid{grid-template-columns:1fr;gap:34px}
+  .g4 .print,.g5 .print{max-width:300px}
+  .g4,.g5{justify-self:center;width:100%;max-width:300px}
+  .ribbons{grid-template-columns:repeat(2,1fr)}
+  .cgrid{grid-template-columns:1fr}
+  .mbar{display:grid}
+  .r1{transform:rotate(-1deg)}.r2{transform:rotate(.8deg)}.r4{transform:rotate(1.2deg)}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<div class="notice" role="note">Neoficiálny návrh — nie je to oficiálny web podniku · ukážka od webdavid.sk, objednávky ani rezervácie tu nefungujú</div>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top"><img src="assets/happy-hair-logo.webp" width="200" height="200" alt="Logo Happy Hair Salon"><span>Happy Hair Salon</span></a>
+    <nav aria-label="Hlavná navigácia">
+      <a href="#sluzby">Služby</a>
+      <a href="#premeny">Premeny</a>
+      <a href="#ocenenia">Ocenenia</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="tel num" href="tel:+421951730733">0951 730 733</a>
+    <a class="btn btn-gold" href="tel:+421951730733">Zavolať</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap">
+    <figure class="print pin r1">
+      <div class="crop"><img src="assets/premena-medena-kucera.webp" width="1100" height="1100" alt="Premena medených kučeravých vlasov — vľavo pred, vpravo po úprave, pohľad zozadu" fetchpriority="high"></div>
+      <figcaption><span>pred</span><span>po</span></figcaption>
+    </figure>
+    <div class="stack">
+      <div class="note pin gold r2">
+        <span class="tag">Kaderníctvo · Rožňava</span>
+        <h1 id="h1">Happy Hair Salon</h1>
+        <p class="intro"><q>Špecialista na kučeravé vlasy a ozdravenie vlasov. Trichologické služby a poradenstvo.</q><span class="src">— ako sa sami predstavujú na Facebooku</span></p>
+        <div class="ctas">
+          <a class="btn btn-green num" href="tel:+421951730733">Zavolať 0951 730 733</a>
+          <a class="btn btn-line" href="#premeny">Pozrieť premeny</a>
+        </div>
+      </div>
+      <div class="mini">
+        <div class="note pin r3"><b class="num">5,0</b><span class="num">z 5 · 42 hodnotení na Orly kaderníctva</span></div>
+        <div class="note pin r4"><b class="num">2025 · 2026</b><span>zlatá medaila Orly kaderníctva</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="felt" id="sluzby" aria-labelledby="h-sluzby">
+  <div class="wrap">
+    <div class="felt-head">
+      <h2 id="h-sluzby">Čím sa zaoberajú</h2>
+      <span class="tag">Podľa ich facebookovej stránky</span>
+    </div>
+    <ul class="svc">
+      <li class="note pin gold r3"><h3>Kučeravé vlasy</h3><p>Salón sa sám označuje za špecialistu na kučeravé vlasy. Ako to vyzerá v praxi, ukazujú premeny nižšie — vždy pred a po.</p></li>
+      <li class="note pin gold r2"><h3>Ozdravenie vlasov</h3><p>Druhá špecializácia, ktorú uvádzajú hneď vedľa kučier. Čo presne obnáša, vysvetlí salón pri objednaní.</p></li>
+      <li class="note pin gold r1"><h3>Trichológia</h3><p>Trichologické služby a poradenstvo — tretí pilier, ktorý salón uvádza vo svojom predstavení.</p></li>
+    </ul>
+    <div class="foot">
+      <p class="motto">„Krása sa ukrýva v zdravých vlasoch“</p>
+      <p><strong>Ukážka návrhu: cenník a dĺžku termínov doplní salón.</strong> Cenník v dostupných profiloch zatiaľ chýba — termín dohodnete telefonicky.</p>
+    </div>
+  </div>
+</section>
+
+<section class="wall" id="premeny" aria-labelledby="h-premeny">
+  <div class="wrap">
+    <div class="sec-h">
+      <h2 id="h-premeny">Kučeravé premeny</h2>
+      <p class="note pin r2"><q>Keď už začal ten posledný mesiac v roku, uložím si sem útržky z tohtoročných kučeravých premien.</q><span class="src">— z ich príspevku na Facebooku, 1.&nbsp;12.&nbsp;2025</span></p>
+    </div>
+    <div class="grid">
+      <figure class="print pin g1 r2"><div class="crop"><img src="assets/premena-gastanova.webp" width="760" height="760" loading="lazy" alt="Gaštanové vlasy pred a po — z rovných strapatých vlasov definované kučery"></div><figcaption><span>pred</span><span>po</span></figcaption></figure>
+      <figure class="print pin gold g2 r1"><div class="crop"><img src="assets/premena-blond-kucery.webp" width="760" height="760" loading="lazy" alt="Blond kučery pred a po úprave, pohľad zozadu"></div><figcaption><span>pred</span><span>po</span></figcaption></figure>
+      <figure class="print pin g3 r4"><div class="crop"><img src="assets/premena-melir-kucery.webp" width="760" height="760" loading="lazy" alt="Melírované vlnité vlasy pred a po — kratšie, plné kučery"></div><figcaption><span>pred</span><span>po</span></figcaption></figure>
+      <figure class="print pin gold g4 r3"><div class="crop"><img src="assets/premena-medena-dlha.webp" width="315" height="315" loading="lazy" alt="Dlhé medené vlasy pred a po, kučery zozadu"></div><figcaption><span>pred</span><span>po</span></figcaption></figure>
+      <figure class="print pin g5 r2"><div class="crop"><img src="assets/premena-tmave-kucery.webp" width="315" height="315" loading="lazy" alt="Tmavé kučery pred a po úprave"></div><figcaption><span>pred</span><span>po</span></figcaption></figure>
+      <figure class="print pin gold g6 r1"><div class="crop"><img src="assets/difuzer-pri-praci.webp" width="370" height="370" loading="lazy" alt="Sušenie medených kučier difúzorom pri práci v salóne"></div><figcaption><span>pri práci</span><span>difúzor</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="awards" id="ocenenia" aria-labelledby="h-ocenenia">
+  <div class="wrap">
+    <div class="sec-h"><h2 id="h-ocenenia">Laureát Orly 4 roky po sebe</h2></div>
+    <div class="ribbons">
+      <div class="ribbon pin r1"><div class="medal bz num">23</div><b class="num">2023</b><span>laureát + bronz</span></div>
+      <div class="ribbon pin r2"><div class="medal ag num">24</div><b class="num">2024</b><span>laureát + striebro</span></div>
+      <div class="ribbon pin gold r3"><div class="medal au num">25</div><b class="num">2025</b><span>laureát + zlato</span></div>
+      <div class="ribbon pin gold r4"><div class="medal au num">26</div><b class="num">2026</b><span>laureát + zlato</span></div>
+      <div class="note score pin r2">
+        <b class="num">5,0 / 5</b>
+        <p class="num">42 hodnotení na Orly kaderníctva · II. miesto v Rožňave. Na Facebooku ich odporúča 100&nbsp;% zo&nbsp;16 hodnotení.</p>
+        <small>Zdroj: orlykadernictva.eu a FB stránka salónu, 1.&nbsp;10.&nbsp;2026</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="kontakt" aria-labelledby="h-kontakt">
+  <div class="wrap">
+    <div class="card pin gold">
+      <h2 id="h-kontakt">Kontakt</h2>
+      <div class="cgrid">
+        <div><span class="tag">Adresa</span><p class="big">Námestie baníkov 33</p><p>Rožňava</p><small>Podľa Facebooku. Profil na Orly ešte uvádza Čučmianska dlhá 6 — adresu overiť.</small></div>
+        <div><span class="tag">Telefón</span><p class="big num"><a href="tel:+421951730733">0951 730 733</a></p><small>Číslo z ich facebookovej stránky.</small></div>
+        <div><span class="tag">E-mail</span><p><a href="mailto:happyhairsalon.sk@gmail.com">happyhairsalon.sk@gmail.com</a></p></div>
+        <div><span class="tag">Otváracie hodiny</span><p>Zatiaľ nikde nezverejnené — overiť.</p><small>Ukážka návrhu: sem patrí rozpis dní, ktorý doplní salón.</small></div>
+      </div>
+      <div class="ctas">
+        <a class="btn btn-green" href="tel:+421951730733">Zavolať</a>
+        <a class="btn btn-line" href="https://www.facebook.com/happyhairsalonsk/" rel="noopener">Facebook</a>
+        <a class="btn btn-line" href="https://www.google.com/maps/search/Happy+Hair+Salon+SK+Rožňava" rel="noopener">Google Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><span>Neoficiálny návrh webu · webdavid.sk · 2026</span><span>Fotky: facebooková stránka Happy Hair Salon SK</span></div>
+</footer>
+
+<div class="mbar" aria-label="Rýchle akcie">
+  <a class="btn btn-gold" href="tel:+421951730733">Zavolať</a>
+  <a class="btn btn-line" href="https://www.facebook.com/happyhairsalonsk/" rel="noopener">Facebook</a>
+</div>
+</html>
